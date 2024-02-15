@@ -1,13 +1,12 @@
 import './App.css';
+import ItemList from './ItemList';
+
 
 function App() {
   return (
     <div className='main-container'>
-      <h1 id="first-message"> Create your list and hope for the best </h1>
-      <div>
-        <input type="text" id='input-field'/>
-        <button> Add Task </button>
-        </div>
+      <header id="first-message" >Create your list and do your best</header>
+    <ItemList />
     </div>
   );
 }

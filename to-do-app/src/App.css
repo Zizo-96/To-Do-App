@@ -3,4 +3,11 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  font-family: Georgia,serif;
+}
+
+#first-message{
+  font-size:1.3rem;
+  margin: 20px;
+  font-weight: bold;
 }

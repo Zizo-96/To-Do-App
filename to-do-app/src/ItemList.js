@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import './ItemList.css';
 
 function ItemList() {
     const [task, setTask]= useState("");
@@ -13,7 +14,7 @@ function ItemList() {
         // addedTasks.push(task);
         // setAllTasks(addedTasks);
         // console.log(addedTasks);
-        if (task=== "") {
+        if (task.trim() === "") {
             alert("Task can't be empty!");
         } else {setAllTasks([...allTasks, task])}
         setTask("");
@@ -29,9 +30,12 @@ function ItemList() {
         <input value={task} onChange={handleChange} type="text" id='input-field' onKeyDown={(e)=> (e.key ==="Enter") && handleClick()}/>
         <button onClick={handleClick}> Add Task </button>
         {allTasks.map((toDo)=>{return (
-            <ul>
-                <li>{toDo}</li>
-            </ul>
+            <div className='list-section'>
+                <input type="checkbox" name="" id="checkBox" />
+                <p>{toDo}</p>
+                <button id='button'>x</button>
+            </div>
+           
         )})}
     </div>
   )

@@ -1,0 +1,16 @@
+
+.list-section{
+    display: flex;
+    background-color: red; 
+    justify-content:space-between;
+    align-items: center; 
+}
+
+ul li {
+    list-style: none;
+}
+
+/* #checkBox{
+  justify-self: flex-start;
+  margin-left: 0;
+} */

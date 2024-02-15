@@ -28,12 +28,13 @@ function ItemList() {
   return (
     <div>
         <input value={task} onChange={handleChange} type="text" id='input-field' onKeyDown={(e)=> (e.key ==="Enter") && handleClick()}/>
-        <button onClick={handleClick}> Add Task </button>
-        {allTasks.map((toDo)=>{return (
+        <button id='btn-add' onClick={handleClick}> Add Task </button>
+        {allTasks.map((toDo)=>{
+            return (
             <div className='list-section'>
                 <input type="checkbox" name="" id="checkBox" />
                 <p>{toDo}</p>
-                <button id='button'>x</button>
+                <button id='btn-delete'>x</button>
             </div>
            
         )})}

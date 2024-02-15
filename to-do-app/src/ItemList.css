@@ -1,16 +1,51 @@
-
 .list-section{
     display: flex;
-    background-color: red; 
     justify-content:space-between;
-    align-items: center; 
+    align-items: center;
+    background-color: #C5B09C;
+    border-bottom: 1px solid white;
+    border-radius: 5px;
+    width: 90%;
 }
 
-ul li {
-    list-style: none;
+.list-section:hover {
+  background-color: #C5B09C;
 }
 
+p {
+    border-bottom: 1px solid #C5B09C;
+}
+
+#btn-add{
+  background-color: #815D3C;
+  color: white;
+}
+
+#btn-add:hover{
+  background-color: #684026;
+  cursor: pointer;
+}
 /* #checkBox{
   justify-self: flex-start;
   margin-left: 0;
 } */
+
+#input-field{
+  width: 40vw;
+  height: 5vh;
+  background-color:transparent;
+  border-radius: 5px;
+  border: 1px solid black;
+  font-size: 1.5rem;
+  margin: 5px;
+  padding: 5px;
+}
+
+#btn-add{
+  height: 6vh;
+  border: 1px solid black;
+  font-size: 1rem;
+  margin: 5px;
+  padding: 6px;
+  border-radius: 5px;
+}

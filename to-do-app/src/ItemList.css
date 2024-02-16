@@ -4,23 +4,31 @@
     align-items: center;
     background-color: #C5B09C;
     border-bottom: 1px solid white;
-    border-radius: 5px;
-    width: 90%;
+    border-radius: 8px;
+    width: 85%;
+    margin: 5px;
+    /* font-size: 1.2em; */
 }
 
 .list-section:hover {
-  background-color: #C5B09C;
+  box-shadow: 0 0 10px rgba(255, 0, 0, 0.5);
 }
 
 p {
     border-bottom: 1px solid #C5B09C;
-    font-size: 1.3em;
+    font-size: 1.2em;
     color: #312313;
 }
 
 #btn-add{
   background-color: #815D3C;
   color: white;
+  height: 6vh;
+  border: 1px solid black;
+  font-size: 1rem;
+  margin: 5px;
+  padding: 6px;
+  border-radius: 5px;
 }
 
 #btn-add:hover{
@@ -28,10 +36,6 @@ p {
   cursor: pointer;
   box-shadow: 0 0 10px rgba(255, 0, 0, 0.5);
 }
-/* #checkBox{
-  justify-self: flex-start;
-  margin-left: 0;
-} */
 
 #input-field{
   width: 40vw;
@@ -59,21 +63,13 @@ p {
   font-style: italic;
 }
 
-#btn-add{
-  height: 6vh;
-  border: 1px solid black;
-  font-size: 1rem;
-  margin: 5px;
-  padding: 6px;
-  border-radius: 5px;
-}
-
 #btn-delete{
   height: 3rem;
   width: 4em;
   border-radius: 15%;
   background-color: transparent;
-  margin: 5px;
+  margin: 7px;
+  color: red;
 }
 
 #btn-delete:hover{
@@ -82,13 +78,14 @@ p {
   box-shadow: 0 0 10px rgba(255, 0, 0, 0.5);
 }
 
-#checkBox{
-  height: 2rem;
-  width: 1.5em;
-  background-color: transparent;
+#check-box{
+  height: 2em;
+  width: 2em;
+  margin: 7px;
 }
 
-#checkBox:hover{
+#check-box:hover{
   background-color: #684026;
   cursor: pointer;
+  box-shadow: 0 0 10px rgba(255, 0, 0, 0.5);
 }
